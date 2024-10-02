@@ -4,7 +4,10 @@
 /[Bb]uild/
 /[Bb]uilds/
 /Assets/AssetStoreTools*
+/Logs
+/Document/test.md
 /.vs/
+/UserSettings
 ExportedObj/
 .vscode/
 .consulo/
