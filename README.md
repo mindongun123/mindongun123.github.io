@@ -1,8 +1,8 @@
 # Mindongun Unity
 
-## `I` Kiến thức cơ bản C#
+## Kiến thức cơ bản C#
 
-### [Bài 1](https://mindongun123.github.io//blob/main/Document/Bai1.md)
+### [Bài 1](https://mindongun123.github.io/Document/Ex1.md)
 - Sử dụng Git
 - Cấu Trúc Lệnh Căn Bản
 - Tìm hiểu về Biến
@@ -14,7 +14,7 @@
 - Toán tử quan hệ
 - Thứ tự ưu tiên của toán tử
 
-### [Bài 2]()
+### [Bài 2](https://mindongun123.github.io/Document/Ex2.md)
 - Hằng số
 - Ép Kiểu
 - Parse và TryParse
@@ -23,7 +23,8 @@
 - Switch-Case
 - Kiểu dữ liệu Object
 - Boxing và Unboxing
-### [Bài 3]()
+
+### [Bài 3](https://mindongun123.github.io/Document/Ex3.md)
 - Từ Khóa Var
 - Từ khóa Dynamic
 - Vòng lặp
@@ -33,34 +34,40 @@
 - Tìm hiểu về Hàm
 - Biến toàn cục, biến cục bộ
 - Từ khóa ref và out
-### [Bài 4]()
+
+### [Bài 4](https://mindongun123.github.io/Document/Ex4.md)
 - Mảng một chiều
 - Mảng 2 Chiều
 - Foreach
-### [Bài 5]()
+
+### [Bài 5](https://mindongun123.github.io/Document/Ex5.md)
 - Chữa bài tập
  
-### [Bài 6]()	
+### [Bài 6](https://mindongun123.github.io/Document/Ex6.md)
 - Lớp String
 - Lớp StringBuilder
 - Kiểu liệt kê Enum
-### [Bài 7]()
+
+### [Bài 7](https://mindongun123.github.io/Document/Ex7.md)
 - OOP
 - Class
 - Phương thức khởi tạo (Constructor)
 - Phương thức hủy bỏ (Destructor)
-### [Bài 8]()
+
+### [Bài 8](https://mindongun123.github.io/Document/Ex8.md)
 - Kế thừa (Inheritance)
 - Đa Hình
 - Interface
 - Nạp chồng (Overload)
-### [Bài 9]()
+
+### [Bài 9](https://mindongun123.github.io/Document/Ex9.md)
 - Collection
 - ArrayList
 - Phương thức Sort
 - HashTable
 - SortedList
-### [Bài 10]()
+
+### [Bài 10](https://mindongun123.github.io/Document/Ex10.md)
 - Stack
 - Queue
 - Generic
@@ -72,9 +79,9 @@
 - Linq
 
 
-## `II` Học Phần Unity Căn Bản
+## Học Phần Unity Căn Bản
 
-### [Bài 11]()
+### [Bài 11](https://mindongun123.github.io/Document/Bai1.md)
 - Tạo Project - Bố cục làm việc - Cấu trúc Project
 - Thành phần Scene
 - Tìm hiểu về GameObject
@@ -89,7 +96,7 @@
 - Câu lệnh Instantiate và Destroy
 - Component
 
-### [Bài 12]()
+### [Bài 12](https://mindongun123.github.io/Document/Bai12.md)
 - Rigidbody
 - Va chạm trong game (Collision và Trigger)
 - Bắt va chạm Collision
