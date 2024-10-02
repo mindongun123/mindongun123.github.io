@@ -2,7 +2,7 @@
 
 ## Kiến thức cơ bản C#
 
-### [Bài 1](https://mindongun123.github.io/Document/Ex1.html)
+### [Bài 1](https://mindongun123.github.io/Document/Ex1.md)
 - Sử dụng Git
 - Cấu Trúc Lệnh Căn Bản
 - Tìm hiểu về Biến
@@ -14,7 +14,7 @@
 - Toán tử quan hệ
 - Thứ tự ưu tiên của toán tử
 
-### [Bài 2](https://mindongun123.github.io/Document/Ex2.html)
+### [Bài 2](https://mindongun123.github.io/Document/Ex2.md)
 - Hằng số
 - Ép Kiểu
 - Parse và TryParse
@@ -24,7 +24,7 @@
 - Kiểu dữ liệu Object
 - Boxing và Unboxing
 
-### [Bài 3](https://mindongun123.github.io/Document/Ex3.html)
+### [Bài 3](https://mindongun123.github.io/Document/Ex3.md)
 - Từ Khóa Var
 - Từ khóa Dynamic
 - Vòng lặp
@@ -35,39 +35,39 @@
 - Biến toàn cục, biến cục bộ
 - Từ khóa ref và out
 
-### [Bài 4](https://mindongun123.github.io/Document/Ex4.html)
+### [Bài 4](https://mindongun123.github.io/Document/Ex4.md)
 - Mảng một chiều
 - Mảng 2 Chiều
 - Foreach
 
-### [Bài 5](https://mindongun123.github.io/Document/Ex5.html)
+### [Bài 5](https://mindongun123.github.io/Document/Ex5.md)
 - Chữa bài tập
  
-### [Bài 6](https://mindongun123.github.io/Document/Ex6.html)
+### [Bài 6](https://mindongun123.github.io/Document/Ex6.md)
 - Lớp String
 - Lớp StringBuilder
 - Kiểu liệt kê Enum
 
-### [Bài 7](https://mindongun123.github.io/Document/Ex7.html)
+### [Bài 7](https://mindongun123.github.io/Document/Ex7.md)
 - OOP
 - Class
 - Phương thức khởi tạo (Constructor)
 - Phương thức hủy bỏ (Destructor)
 
-### [Bài 8](https://mindongun123.github.io/Document/Ex8.html)
+### [Bài 8](https://mindongun123.github.io/Document/Ex8.md)
 - Kế thừa (Inheritance)
 - Đa Hình
 - Interface
 - Nạp chồng (Overload)
 
-### [Bài 9](https://mindongun123.github.io/Document/Ex9.html)
+### [Bài 9](https://mindongun123.github.io/Document/Ex9.md)
 - Collection
 - ArrayList
 - Phương thức Sort
 - HashTable
 - SortedList
 
-### [Bài 10](https://mindongun123.github.io/Document/Ex10.html)
+### [Bài 10](https://mindongun123.github.io/Document/Ex10.md)
 - Stack
 - Queue
 - Generic
