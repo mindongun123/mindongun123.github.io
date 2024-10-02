@@ -2,7 +2,7 @@
 
 ## Kiến thức cơ bản C#
 
-### [Bài 1](https://mindongun123.github.io/Document/Ex1.md)
+### [Bài 1](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex1.md)
 - Sử dụng Git
 - Cấu Trúc Lệnh Căn Bản
 - Tìm hiểu về Biến
@@ -21,6 +21,8 @@
 - Switch-Case
 - Kiểu dữ liệu Object
 - Boxing và Unboxing
+
+### [Bài 2](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex2.md)
 - Từ Khóa Var
 - Từ khóa Dynamic
 - Vòng lặp
@@ -33,8 +35,6 @@
 - Mảng một chiều
 - Mảng 2 Chiều
 - Foreach
-
-### [Bài 2](https://mindongun123.github.io/Document/Ex2.md)
 - Lớp String
 - Lớp StringBuilder
 - Kiểu liệt kê Enum
@@ -46,6 +46,8 @@
 - Đa Hình
 - Interface
 - Nạp chồng (Overload)
+
+### [Bài 3](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex3.md)
 - Collection
 - ArrayList
 - Phương thức Sort
@@ -64,7 +66,7 @@
 
 ## Học Phần Unity Căn Bản
 
-### [Bài 11](https://mindongun123.github.io/Document/Bai1.md)
+### [Bài 4](https://mindongun123.github.io/Document/Bai4.md)
 - Tạo Project - Bố cục làm việc - Cấu trúc Project
 - Thành phần Scene
 - Tìm hiểu về GameObject
@@ -79,7 +81,7 @@
 - Câu lệnh Instantiate và Destroy
 - Component
 
-### [Bài 12](https://mindongun123.github.io/Document/Bai12.md)
+### [Bài 5](https://mindongun123.github.io/Document/Bai5.md)
 - Rigidbody
 - Va chạm trong game (Collision và Trigger)
 - Bắt va chạm Collision
