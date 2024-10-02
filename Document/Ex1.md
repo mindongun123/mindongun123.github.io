@@ -1,3 +1,5 @@
+## Bài 1
+
 - Sử dụng Git
 - Cấu Trúc Lệnh Căn Bản
 - Tìm hiểu về Biến
