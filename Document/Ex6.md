@@ -1,7 +1,11 @@
-## Bài 6
+# Bài 6
 
 
-### Collection
+|[P1](#collection)|[P2](#arraylist)|[P3](#phương-thức-sort)|[P4](#hashtable)|[P5](#sortedlist)|[P6](#stack)|[P7](#queue)|[P8](#generic)|[P9](#list)|[P10](#dictionary)|[P11](#delegate)|[P12](#event)|[P13](#lambda)|[P14](#linq)|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
+
+## Collection
 - `Collections` trong C# là một nhóm các lớp và giao diện được sử dụng để lưu trữ và quản lý một tập hợp các đối tượng. Các `collection` cung cấp nhiều phương thức để thêm, xóa, tìm kiếm và truy cập các phần tử trong tập hợp. Các `collection` thường được sử dụng thay cho mảng khi bạn cần khả năng linh hoạt hơn trong việc quản lý dữ liệu.
 
 - Một số loại collection phổ biến trong C# bao gồm:
@@ -12,7 +16,7 @@
     + `Dictionary<TKey, TValue>`
     + `SortedList<TKey, TValue>`
 
-### ArrayList
+## ArrayList
 
 - `ArrayList` là một collection có khả năng thay đổi kích thước, cho phép bạn thêm và xóa các phần tử mà không cần phải xác định kích thước trước. `ArrayList` có thể chứa các đối tượng của bất kỳ kiểu dữ liệu nào.
 
@@ -53,7 +57,7 @@ class Program
 }
 ```
 
-### Phương thức Sort
+## Phương thức Sort
 
 - `Sort` là một phương thức có sẵn trong nhiều collection để sắp xếp các phần tử. Khi sử dụng `Sort` trên `ArrayList`, các phần tử sẽ được sắp xếp theo thứ tự tăng dần.
 
@@ -86,7 +90,7 @@ class Program
 }
 ```
 
-### HashTable
+## HashTable
 - `HashTable` là một `collection` lưu trữ các cặp `key-value` (khóa-giá trị), cho phép truy cập nhanh chóng dựa trên khóa. Mỗi khóa trong `HashTable` là duy nhất và không thể trùng lặp.
 
 ```C#
@@ -122,7 +126,7 @@ class Program
 }
 
 ```
-### SortedList
+## SortedList
 
 -` SortedList` là một `collection` kết hợp giữa `ArrayList` và `HashTable`. Nó lưu trữ các cặp `key-value`, nhưng các phần tử được sắp xếp theo thứ tự tăng dần của khóa. `SortedList` cho phép bạn truy cập các phần tử thông qua khóa và có hiệu suất tốt trong việc truy cập dữ liệu.
 
@@ -162,7 +166,7 @@ class Program
 
 
 
-### Stack
+## Stack
 - `Stack` là một cấu trúc dữ liệu theo nguyên tắc LIFO (Last In, First Out), tức là phần tử được thêm vào sau cùng sẽ được lấy ra trước tiên. Bạn có thể sử dụng `Stack` để quản lý các đối tượng mà bạn muốn truy cập theo thứ tự ngược lại.
 
 ```C#
@@ -196,7 +200,7 @@ class Program
 
 
 
-### Queue
+## Queue
 
 - `Queue` là một cấu trúc dữ liệu theo nguyên tắc FIFO (First In, First Out), tức là phần tử được thêm vào đầu tiên sẽ được lấy ra đầu tiên. `Queue` thường được sử dụng trong các ứng dụng như xử lý sự kiện hoặc các tác vụ cần quản lý theo thứ tự.
 
@@ -229,7 +233,7 @@ class Program
 }
 ```
 
-### Generic
+## Generic
 
 - `Generic` cho phép bạn định nghĩa các lớp, phương thức, và cấu trúc mà không cần chỉ định kiểu dữ liệu cụ thể. Điều này giúp tăng tính linh hoạt và tái sử dụng mã.
 
@@ -258,7 +262,7 @@ class Program
 }
 ```
 
-### List
+## List
 
 - `List<T>` là một `collection` có khả năng thay đổi kích thước, tương tự như `ArrayList`, nhưng chỉ có thể chứa các đối tượng cùng kiểu `T`. Điều này giúp bảo vệ dữ liệu và cải thiện hiệu suất.
 
@@ -293,7 +297,7 @@ class Program
 }
 ```
 
-### Dictionary
+## Dictionary
 
 - `Dictionary<TKey, TValue>` là một `collection` lưu trữ các cặp `key-value`, cho phép truy cập nhanh chóng theo khóa. Các khóa là duy nhất và không thể trùng lặp.
 
@@ -324,7 +328,7 @@ class Program
 }
 ```
 
-### Delegate
+## Delegate
 
 - `Delegate` là một kiểu dữ liệu cho phép bạn lưu trữ tham chiếu đến các phương thức. Bạn có thể sử dụng `delegate` để gọi phương thức một cách gián tiếp, làm cho việc xử lý sự kiện trở nên dễ dàng hơn.
 
@@ -348,7 +352,7 @@ class Program
 }
 ```
 
-### Event
+## Event
 
 - `Sự kiện (Event)` trong C# được sử dụng để xử lý thông báo khi một hành động xảy ra. Sự kiện thường kết hợp với `delegate` để cho phép một lớp thông báo cho các lớp khác về các hành động cụ thể.
 
@@ -392,7 +396,7 @@ class Program
 }
 ```
 
-### Lambda
+## Lambda
 
 - `Lambda expressions` là một cách ngắn gọn để định nghĩa các phương thức ẩn danh. Chúng thường được sử dụng với `delegate` và các phương thức `LINQ`.
 
@@ -410,7 +414,7 @@ class Program
 }
 
 ```
-### Linq
+## Linq
 
 - `LINQ` (Language Integrated Query) cho phép bạn sử dụng cú pháp truy vấn trực tiếp trong C#. Nó hỗ trợ việc truy xuất dữ liệu từ các nguồn khác nhau như mảng, danh sách, cơ sở dữ liệu, v.v.
 

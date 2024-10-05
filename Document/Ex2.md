@@ -1,8 +1,9 @@
-## Bài 2
+# Bài 2
 
+|[P1](#hằng-số)|[P2](#ép-kiểu)|[P3](#parse-và-tryparse)|[P4](#convert)|[P5](#câu-lệnh-rẽ-nhánh-if-else)|[P6](#switch-case)|[P7](#kiểu-dữ-liệu-object)|[P8](#boxing-và-unboxing)|
+|-|-|-|-|-|-|-|-|
 
-
-### Hằng số
+## Hằng số
 
 - Hằng số là các giá trị không thể thay đổi trong suốt quá trình thực thi chương trình. 
 - Trong C#, hằng số được khai báo với từ khóa `const`.
@@ -12,7 +13,7 @@ const double PI = 3.14159;
 const int MAX_VALUE = 100;
 ```
 
-### Ép Kiểu
+## Ép Kiểu
 
 - Ép kiểu (type casting) trong C# là việc chuyển đổi một giá trị từ kiểu dữ liệu này sang kiểu dữ liệu khác. C# hỗ trợ hai loại ép kiểu chính: ép kiểu ngầm định và ép kiểu tường minh.
 
@@ -33,7 +34,7 @@ double c = 9.8;
 int d = (int)c; // double chuyển thành int (mất phần thập phân)
 
 ```
-### Parse và TryParse
+## Parse và TryParse
 
 - `Parse` và `TryParse` dùng để chuyển đổi chuỗi (string) thành các kiểu dữ liệu số.
 
@@ -54,7 +55,7 @@ string invalidString = "abc";
 bool success = int.TryParse(invalidString, out int result); // success = false, result = 0
 ```
 
-### Convert
+## Convert
 - Lớp `Convert` cung cấp các phương thức để chuyển đổi các kiểu dữ liệu khác nhau.
 
 ```C#
@@ -66,7 +67,7 @@ int roundedNumber = Convert.ToInt32(decimalNumber); // roundedNumber = 12
 
 - `Convert` cũng hỗ trợ chuyển đổi từ kiểu số thành chuỗi và ngược lại, cũng như giữa các kiểu dữ liệu khác.
 
-### Câu lệnh rẽ nhánh If-Else
+## Câu lệnh rẽ nhánh If-Else
 
 - Câu lệnh `if-else` cho phép bạn thực thi các đoạn mã khác nhau dựa trên điều kiện.
 
@@ -83,7 +84,7 @@ else
 }
 ```
 
-### Switch-Case
+## Switch-Case
 
 - Switch-case là một câu lệnh điều kiện khác thay thế cho if-else khi bạn cần kiểm tra nhiều giá trị của một biến.
 
@@ -109,7 +110,7 @@ switch (day)
 
 - `Lưu ý`: Mỗi case cần có break để thoát khỏi câu lệnh switch khi một điều kiện thỏa mãn.
 
-### Kiểu dữ liệu Object
+## Kiểu dữ liệu Object
 
 - `object` là kiểu dữ liệu gốc của tất cả các kiểu dữ liệu trong C#. Mọi kiểu dữ liệu đều có thể được gán cho biến kiểu `object`.
 
@@ -122,7 +123,7 @@ myObject = 12.34;   // double
 
 - Bạn có thể lưu bất kỳ kiểu dữ liệu nào vào object, nhưng khi truy xuất giá trị, bạn cần thực hiện ép kiểu tường minh về kiểu dữ liệu cụ thể.
 
-### Boxing và Unboxing
+## Boxing và Unboxing
 
 - `Boxing`: Chuyển đổi một giá trị kiểu dữ liệu giá trị (value type) thành object.
 - `Unboxing`: Chuyển đổi ngược từ object về kiểu giá trị ban đầu.

@@ -1,7 +1,10 @@
-## Bài 4
+# Bài 4
 
 
-### Mảng một chiều
+|[P1](#mảng-một-chiều)|[P2](#mảng-2-chiều)|[P3](#foreach)|[P4](#lớp-string)|[P5](#lớp-stringbuilder)|[P6](#kiểu-liệt-kê-enum)| 
+|-|-|-|-|-|-|
+
+## Mảng một chiều
 
 
 
@@ -23,7 +26,7 @@ for (int i = 0; i < numbers.Length; i++)
 ```
 
 
-### Mảng 2 Chiều
+## Mảng 2 Chiều
 
 - `Mảng hai chiều` trong C# là một bảng các giá trị được tổ chức dưới dạng hàng và cột. Nó thường được sử dụng để biểu diễn ma trận hoặc bảng.
 
@@ -50,7 +53,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 }
 ```
 
-### Foreach
+## Foreach
 
 - Câu lệnh foreach được sử dụng để duyệt qua tất cả các phần tử trong một mảng hoặc bất kỳ cấu trúc dữ liệu nào triển khai `IEnumerable` mà không cần sử dụng chỉ số.
 
@@ -64,7 +67,7 @@ foreach (int number in numbers)
 ```
 
 
-### Lớp String
+## Lớp String
 
 - Lớp String trong C# đại diện cho một chuỗi ký tự bất biến, tức là không thể thay đổi nội dung của nó sau khi được khởi tạo
 
@@ -87,7 +90,7 @@ Console.WriteLine(greeting.Contains("Hel"));  // Output: True
 
 
 
-### Lớp StringBuilder
+## Lớp StringBuilder
 - Lớp `StringBuilder` được sử dụng khi bạn cần thực hiện nhiều thao tác với chuỗi mà không muốn tạo nhiều đối tượng `String` mới. `StringBuilder` có thể thay đổi nội dung mà không tạo ra chuỗi mới.
 
 ```C#
@@ -105,7 +108,7 @@ Console.WriteLine(sb.ToString());  // Output: Hello John!
 - `Lợi ích`: `StringBuilder` hiệu quả hơn so với `String` khi cần nối, thay thế hoặc thao tác nhiều lần trên chuỗi, vì nó không tạo ra nhiều đối tượng mới trong bộ nhớ như `String` làm.
 
 
-### Kiểu liệt kê Enum
+## Kiểu liệt kê Enum
 
 - `Enum` là kiểu dữ liệu đặc biệt trong C# được sử dụng để định nghĩa một tập hợp các hằng số với tên dễ hiểu, giúp code dễ đọc và dễ bảo trì hơn.
 

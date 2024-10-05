@@ -1,7 +1,10 @@
-## Bài 5
+# Bài 5
 
 
-### OOP
+|[P1](#oop)|[P2](#class)|[P3](#phương-thức-khởi-tạo-constructor)|[P4](#phương-thức-hủy-bỏ-destructor)|[P5](#kế-thừa-inheritance)|[P6](#đa-hình)|[P7](#interface)|[P8](#nạp-chồng-overload)|
+|-|-|-|-|-|-|-|-|
+
+## OOP
 
 - `OOP` (Object-Oriented Programming) là một phương pháp lập trình dựa trên việc sử dụng đối tượng và lớp. Nó giúp chia nhỏ các vấn đề phức tạp thành các phần nhỏ hơn, dễ quản lý và phát triển hơn. `OOP` có 4 đặc trưng chính:
 
@@ -10,7 +13,7 @@
     + `Tính đa hình (Polymorphism)`: Cho phép một phương thức hoặc thuộc tính có nhiều cách sử dụng khác nhau (thông qua `overload` hoặc `override`).
     + `Tính trừu tượng (Abstraction)`: Giấu đi các chi tiết thực thi phức tạp, chỉ cung cấp cho người dùng những thông tin cần thiết.
 
-### Class
+## Class
 - Lớp là một khuôn mẫu để tạo ra các đối tượng (`object`). Nó chứa các thuộc tính (dữ liệu) và phương thức (hành động) để mô tả hành vi và trạng thái của đối tượng
 
 ```C#
@@ -40,7 +43,7 @@ myCar.Start();  // Output: The car is starting.
 
 ```
 
-### Phương thức khởi tạo (Constructor)
+## Phương thức khởi tạo (Constructor)
 - `Constructor` là một phương thức đặc biệt được gọi khi một đối tượng của lớp được tạo. Nó thường dùng để khởi tạo giá trị ban đầu cho các thuộc tính của đối tượng.
 
 - Tên của `constructor` phải trùng với tên của lớp.
@@ -82,7 +85,7 @@ class Program
 
 - `Constructor` mặc định: Nếu bạn không định nghĩa `constructor`, C# sẽ cung cấp một `constructor` mặc định không tham số.
 
-### Phương thức hủy bỏ (Destructor)
+## Phương thức hủy bỏ (Destructor)
 
 - `Destructor` là phương thức được gọi khi đối tượng bị hủy để giải phóng tài nguyên. Trong C#, `destructor` hiếm khi được sử dụng vì hệ thống quản lý bộ nhớ tự động (`garbage collector`) sẽ quản lý việc giải phóng tài nguyên. `Destructor` thường được dùng khi cần giải phóng tài nguyên không quản lý bởi bộ nhớ (ví dụ: tài nguyên hệ thống, file, kết nối cơ sở dữ liệu).
 
@@ -122,7 +125,7 @@ class Program
 - `Lưu ý`: `Destructor` được gọi tự động bởi `garbage collector` khi đối tượng không còn được sử dụng
 
 
-### Kế thừa (Inheritance)
+## Kế thừa (Inheritance)
 - `Kế thừa` là một trong những đặc trưng của `OOP` cho phép một lớp (gọi là lớp con) kế thừa các thuộc tính và phương thức từ một lớp khác (gọi là lớp cha). Điều này giúp tái sử dụng mã và tạo ra cấu trúc phân cấp.
 
 ```C#
@@ -156,7 +159,7 @@ class Program
 
 - `Lưu ý`: Trong C#, một lớp chỉ có thể kế thừa từ một lớp cha (kế thừa đơn). Tuy nhiên, một lớp có thể thực hiện nhiều giao diện.
 
-### Đa Hình
+## Đa Hình
 - `Đa hình` cho phép các phương thức có cùng tên nhưng hành vi khác nhau tùy theo ngữ cảnh. 
 - Có hai loại đa hình:
     + đa hình biên dịch (`compile-time`)
@@ -228,7 +231,7 @@ class Program
 ```
 
 
-### Interface
+## Interface
 
 - `Interface` định nghĩa một tập hợp các phương thức mà lớp thực thi phải triển khai. `Interface` không thể chứa các thuộc tính, phương thức, hoặc `constructor` mà không có thân phương thức (body).
 
@@ -274,7 +277,7 @@ class Program
 - `Lợi ích`: `Interfaces` giúp đạt được tính đa hình và tách biệt giữa các phương thức đã định nghĩa và cách chúng được triển khai, cho phép xây dựng các hệ thống linh hoạt hơn.
 
 
-### Nạp chồng (Overload)
+## Nạp chồng (Overload)
 
 - `Nạp chồng` (`overloading`) cho phép bạn định nghĩa nhiều phương thức hoặc toán tử với cùng tên nhưng khác nhau về số lượng hoặc kiểu tham số. Điều này giúp cải thiện khả năng đọc và sử dụng mã.
 
