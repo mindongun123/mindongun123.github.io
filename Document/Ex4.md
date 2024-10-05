@@ -55,7 +55,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 
 ## Foreach
 
-- Câu lệnh foreach được sử dụng để duyệt qua tất cả các phần tử trong một mảng hoặc bất kỳ cấu trúc dữ liệu nào triển khai `IEnumerable` mà không cần sử dụng chỉ số.
+- Câu lệnh `foreach` được sử dụng để duyệt qua tất cả các phần tử trong một mảng hoặc bất kỳ cấu trúc dữ liệu nào triển khai `IEnumerable` mà không cần sử dụng chỉ số.
 
 ```C#
 int[] numbers = { 10, 20, 30, 40, 50 };
@@ -69,7 +69,7 @@ foreach (int number in numbers)
 
 ## Lớp String
 
-- Lớp String trong C# đại diện cho một chuỗi ký tự bất biến, tức là không thể thay đổi nội dung của nó sau khi được khởi tạo
+- Lớp `String` trong C# đại diện cho một chuỗi ký tự bất biến, tức là không thể thay đổi nội dung của nó sau khi được khởi tạo
 
 ```C#
 string greeting = "Hello";

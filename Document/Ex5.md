@@ -311,7 +311,7 @@ class Program
 ```
 
 
-- Nạp chồng toán tử: Trong C#, bạn cũng có thể nạp chồng các toán tử, cho phép bạn định nghĩa cách các toán tử hoạt động với các kiểu dữ liệu tùy chỉnh.
+- `Nạp chồng toán tử`: Trong C#, bạn cũng có thể nạp chồng các toán tử, cho phép bạn định nghĩa cách các toán tử hoạt động với các kiểu dữ liệu tùy chỉnh.
 
 ```C#
 public class Point

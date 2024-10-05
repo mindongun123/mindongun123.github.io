@@ -86,7 +86,7 @@ else
 
 ## Switch-Case
 
-- Switch-case là một câu lệnh điều kiện khác thay thế cho if-else khi bạn cần kiểm tra nhiều giá trị của một biến.
+- `Switch-case` là một câu lệnh điều kiện khác thay thế cho if-else khi bạn cần kiểm tra nhiều giá trị của một biến.
 
 ```C#
 int day = 3;
