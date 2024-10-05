@@ -1,5 +1,3 @@
-# Mindongun Unity
-
 ## Kiến thức cơ bản C#
 ### [Bài 1](https://mindongun123.github.io/Document/Ex1.html)
 - Sử dụng Git
