@@ -91,5 +91,4 @@
 - IEnumerator
 - Invoke
 - TimeScale
-- PlayerPrefs
 - Giới thiệu về Animation
