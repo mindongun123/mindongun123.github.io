@@ -1,8 +1,7 @@
 # Mindongun Unity
 
 ## Kiến thức cơ bản C#
-
-### [Bài 1](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex1.md)
+### [Bài 1](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex1.html)
 - Sử dụng Git
 - Cấu Trúc Lệnh Căn Bản
 - Tìm hiểu về Biến
@@ -13,6 +12,8 @@
 - Toán tử Logic
 - Toán tử quan hệ
 - Thứ tự ưu tiên của toán tử
+
+### [Bài 2](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex2.html)
 - Hằng số
 - Ép Kiểu
 - Parse và TryParse
@@ -22,7 +23,7 @@
 - Kiểu dữ liệu Object
 - Boxing và Unboxing
 
-### [Bài 2](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex2.md)
+### [Bài 3](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex3.html)
 - Từ Khóa Var
 - Từ khóa Dynamic
 - Vòng lặp
@@ -32,12 +33,16 @@
 - Tìm hiểu về Hàm
 - Biến toàn cục, biến cục bộ
 - Từ khóa ref và out
+
+### [Bài 4](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex4.html)
 - Mảng một chiều
 - Mảng 2 Chiều
 - Foreach
 - Lớp String
 - Lớp StringBuilder
 - Kiểu liệt kê Enum
+
+### [Bài 5](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex5.html)
 - OOP
 - Class
 - Phương thức khởi tạo (Constructor)
@@ -47,7 +52,7 @@
 - Interface
 - Nạp chồng (Overload)
 
-### [Bài 3](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex3.md)
+### [Bài 6](https://github.com/mindongun123/mindongun123.github.io/blob/main/Document/Ex6.html)
 - Collection
 - ArrayList
 - Phương thức Sort
@@ -66,7 +71,7 @@
 
 ## Học Phần Unity Căn Bản
 
-### [Bài 4](https://mindongun123.github.io/Document/Bai4.md)
+### [Bài 7](https://mindongun123.github.io/Document/Bai7.html)
 - Tạo Project - Bố cục làm việc - Cấu trúc Project
 - Thành phần Scene
 - Tìm hiểu về GameObject
@@ -81,7 +86,7 @@
 - Câu lệnh Instantiate và Destroy
 - Component
 
-### [Bài 5](https://mindongun123.github.io/Document/Bai5.md)
+### [Bài 8](https://mindongun123.github.io/Document/Bai8.html)
 - Rigidbody
 - Va chạm trong game (Collision và Trigger)
 - Bắt va chạm Collision

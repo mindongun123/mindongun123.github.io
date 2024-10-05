@@ -1,441 +1,130 @@
 ## Bài 3
 
 
-### Collection
-- `Collections` trong C# là một nhóm các lớp và giao diện được sử dụng để lưu trữ và quản lý một tập hợp các đối tượng. Các `collection` cung cấp nhiều phương thức để thêm, xóa, tìm kiếm và truy cập các phần tử trong tập hợp. Các `collection` thường được sử dụng thay cho mảng khi bạn cần khả năng linh hoạt hơn trong việc quản lý dữ liệu.
+### Từ Khóa Var
 
-- Một số loại collection phổ biến trong C# bao gồm:
-
-   + `ArrayList`
-    + `HashTable`
-   +  `List<T>`
-    + `Dictionary<TKey, TValue>`
-    + `SortedList<TKey, TValue>`
-
-### ArrayList
-
-- `ArrayList` là một collection có khả năng thay đổi kích thước, cho phép bạn thêm và xóa các phần tử mà không cần phải xác định kích thước trước. `ArrayList` có thể chứa các đối tượng của bất kỳ kiểu dữ liệu nào.
+- Từ khóa var cho phép trình biên dịch suy ra kiểu của biến dựa trên giá trị được gán cho nó. Nó chỉ có thể được sử dụng khi giá trị gán cho biến đã xác định rõ kiểu
 
 ```C#
-ArrayList arrayList = new ArrayList();
-arrayList.Add("Hello");
-arrayList.Add(10);
-arrayList.Add(3.14);
+var number = 10;  // Kiểu của number là int
+var text = "Hello";  // Kiểu của text là string
 ```
-```C#
-using System;
-using System.Collections;
+- `Lưu ý`: Khi sử dụng var, kiểu dữ liệu của biến được xác định tại thời điểm biên dịch và không thể thay đổi sau đó.
 
+
+### Từ khóa Dynamic
+- Từ khóa dynamic cho phép một biến thay đổi kiểu dữ liệu trong quá trình thực thi (runtime). Không giống var, kiểu của dynamic không được xác định tại thời điểm biên dịch mà chỉ tại thời gian chạy.
+
+```C#
+dynamic data = 10;
+Console.WriteLine(data);  // In ra 10 (kiểu int)
+data = "Hello";
+Console.WriteLine(data);  // In ra Hello (kiểu string)
+```
+
+- `Lưu ý`: Sử dụng dynamic có thể dẫn đến lỗi chỉ được phát hiện tại thời gian chạy, vì vậy cần thận trọng khi dùng.
+
+### Vòng lặp
+- Vòng lặp cho phép thực thi một đoạn mã nhiều lần dựa trên điều kiện nhất định.
+
+### Vòng lặp for
+- Vòng lặp for thường được sử dụng khi bạn biết trước số lần lặp. Cấu trúc của vòng lặp for bao gồm 3 phần: khởi tạo biến, điều kiện lặp, và thay đổi biến sau mỗi lần lặp.
+
+```C#
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(i);  // In ra 0, 1, 2, 3, 4
+}
+```
+
+### Vòng lặp while
+- Vòng lặp while thực hiện một đoạn mã khi điều kiện kiểm tra là true. Nếu điều kiện không thỏa mãn ngay từ đầu, vòng lặp sẽ không thực hiện lần nào.
+
+```C#
+int i = 0;
+while (i < 5)
+{
+    Console.WriteLine(i);  // In ra 0, 1, 2, 3, 4
+    i++;
+}
+```
+### Vòng lặp do-while
+
+- Vòng lặp do-while luôn thực hiện ít nhất một lần, sau đó mới kiểm tra điều kiện. Nếu điều kiện đúng, vòng lặp tiếp tục; nếu sai, vòng lặp kết thúc.
+
+```C#
+int i = 0;
+do
+{
+    Console.WriteLine(i);  // In ra 0, 1, 2, 3, 4
+    i++;
+} while (i < 5);
+```
+### Tìm hiểu về Hàm
+- Hàm (hay phương thức) là một khối mã thực hiện một chức năng cụ thể. Hàm có thể nhận các tham số và trả về giá trị (hoặc không).
+
+```C#
+int AddNumbers(int a, int b)
+{
+    return a + b;
+}
+
+// Gọi hàm
+int result = AddNumbers(5, 10);  // result = 15
+```
+
+
+### Biến toàn cục, biến cục bộ
+
+- `Biến cục bộ`: Chỉ có thể truy cập trong một phạm vi nhất định như trong một hàm, vòng lặp hoặc khối mã.
+- `Biến toàn cục`: Là biến khai báo trong phạm vi lớp, có thể được truy cập từ bất kỳ phương thức nào trong lớp.
+
+```C#
 class Program
 {
-    static void Main()
+    // Biến toàn cục
+    static int globalVar = 100;
+
+    static void Main(string[] args)
     {
-        ArrayList arrayList = new ArrayList();
-        arrayList.Add("Apple");
-        arrayList.Add("Banana");
-        arrayList.Add("Cherry");
-
-        Console.WriteLine("ArrayList elements:");
-        foreach (var item in arrayList)
-        {
-            Console.WriteLine(item);
-        }
-
-        // Xóa một phần tử
-        arrayList.Remove("Banana");
-
-        Console.WriteLine("After removing Banana:");
-        foreach (var item in arrayList)
-        {
-            Console.WriteLine(item);
-        }
+        int localVar = 10;  // Biến cục bộ
+        Console.WriteLine(globalVar);  // Truy cập biến toàn cục
+        Console.WriteLine(localVar);   // Truy cập biến cục bộ
     }
 }
 ```
+### Từ khóa ref và out
 
-### Phương thức Sort
+- `ref`: Dùng để truyền tham chiếu đến biến, cho phép hàm thay đổi giá trị của biến đó.
+- `out`: Cũng truyền tham chiếu, nhưng biến được yêu cầu phải được gán giá trị bên trong hàm trước khi trả về.
 
-- `Sort` là một phương thức có sẵn trong nhiều collection để sắp xếp các phần tử. Khi sử dụng `Sort` trên `ArrayList`, các phần tử sẽ được sắp xếp theo thứ tự tăng dần.
-
+Ref
 ```C#
-
-using System;
-using System.Collections;
-
-class Program
+void Increase(ref int number)
 {
-    static void Main()
-    {
-        ArrayList arrayList = new ArrayList() { 5, 2, 8, 1, 3 };
-
-        Console.WriteLine("Before sorting:");
-        foreach (var item in arrayList)
-        {
-            Console.WriteLine(item);
-        }
-
-        // Sắp xếp ArrayList
-        arrayList.Sort();
-
-        Console.WriteLine("After sorting:");
-        foreach (var item in arrayList)
-        {
-            Console.WriteLine(item);
-        }
-    }
+    number += 10;
 }
+
+int value = 5;
+Increase(ref value);
+Console.WriteLine(value);  // In ra 15
 ```
 
-### HashTable
-- `HashTable` là một `collection` lưu trữ các cặp `key-value` (khóa-giá trị), cho phép truy cập nhanh chóng dựa trên khóa. Mỗi khóa trong `HashTable` là duy nhất và không thể trùng lặp.
 
+
+Out
 ```C#
-
-Hashtable hashtable = new Hashtable();
-hashtable.Add("key1", "value1");
-hashtable.Add("key2", "value2");
-
-```
-```C#
-
-using System;
-using System.Collections;
-
-class Program
+void GetValues(out int x, out int y)
 {
-    static void Main()
-    {
-        Hashtable hashtable = new Hashtable();
-        hashtable.Add("A", 1);
-        hashtable.Add("B", 2);
-        hashtable.Add("C", 3);
-
-        Console.WriteLine("Hashtable elements:");
-        foreach (DictionaryEntry entry in hashtable)
-        {
-            Console.WriteLine($"Key: {entry.Key}, Value: {entry.Value}");
-        }
-
-        // Truy cập giá trị theo khóa
-        Console.WriteLine($"Value for key 'B': {hashtable["B"]}");
-    }
+    x = 5;
+    y = 10;
 }
 
-```
-### SortedList
-
--` SortedList` là một `collection` kết hợp giữa `ArrayList` và `HashTable`. Nó lưu trữ các cặp `key-value`, nhưng các phần tử được sắp xếp theo thứ tự tăng dần của khóa. `SortedList` cho phép bạn truy cập các phần tử thông qua khóa và có hiệu suất tốt trong việc truy cập dữ liệu.
-
-```C#
-
-SortedList sortedList = new SortedList();
-sortedList.Add("B", 2);
-sortedList.Add("A", 1);
-sortedList.Add("C", 3);
-
+int a, b;
+GetValues(out a, out b);
+Console.WriteLine(a);  // In ra 5
+Console.WriteLine(b);  // In ra 10
 ```
 
-```C#
-using System;
-using System.Collections;
+-`Lưu ý`: Sử dụng từ khóa `ref` và `out` giúp truyền giá trị tham chiếu thay vì giá trị, có thể làm việc hiệu quả hơn khi xử lý dữ liệu lớn hoặc cần trả về nhiều giá trị từ hàm.
 
-class Program
-{
-    static void Main()
-    {
-        SortedList sortedList = new SortedList();
-        sortedList.Add("C", 3);
-        sortedList.Add("A", 1);
-        sortedList.Add("B", 2);
-
-        Console.WriteLine("SortedList elements:");
-        foreach (DictionaryEntry entry in sortedList)
-        {
-            Console.WriteLine($"Key: {entry.Key}, Value: {entry.Value}");
-        }
-
-        // Truy cập giá trị theo khóa
-        Console.WriteLine($"Value for key 'A': {sortedList["A"]}");
-    }
-}
-```
-
-
-
-### Stack
-- `Stack` là một cấu trúc dữ liệu theo nguyên tắc LIFO (Last In, First Out), tức là phần tử được thêm vào sau cùng sẽ được lấy ra trước tiên. Bạn có thể sử dụng `Stack` để quản lý các đối tượng mà bạn muốn truy cập theo thứ tự ngược lại.
-
-```C#
-
-using System;
-using System.Collections.Generic;
-
-class Program
-{
-    static void Main()
-    {
-        Stack<int> stack = new Stack<int>();
-        
-        // Thêm phần tử vào stack
-        stack.Push(1);
-        stack.Push(2);
-        stack.Push(3);
-
-        Console.WriteLine("Stack elements:");
-        foreach (var item in stack)
-        {
-            Console.WriteLine(item);
-        }
-
-        // Lấy phần tử ra khỏi stack
-        Console.WriteLine($"Pop: {stack.Pop()}"); // Lấy ra 3
-        Console.WriteLine($"Peek: {stack.Peek()}"); // Xem phần tử trên cùng (2)
-    }
-}
-```
-
-
-
-### Queue
-
-- `Queue` là một cấu trúc dữ liệu theo nguyên tắc FIFO (First In, First Out), tức là phần tử được thêm vào đầu tiên sẽ được lấy ra đầu tiên. `Queue` thường được sử dụng trong các ứng dụng như xử lý sự kiện hoặc các tác vụ cần quản lý theo thứ tự.
-
-```C#
-
-using System;
-using System.Collections.Generic;
-
-class Program
-{
-    static void Main()
-    {
-        Queue<string> queue = new Queue<string>();
-        
-        // Thêm phần tử vào queue
-        queue.Enqueue("Apple");
-        queue.Enqueue("Banana");
-        queue.Enqueue("Cherry");
-
-        Console.WriteLine("Queue elements:");
-        foreach (var item in queue)
-        {
-            Console.WriteLine(item);
-        }
-
-        // Lấy phần tử ra khỏi queue
-        Console.WriteLine($"Dequeue: {queue.Dequeue()}"); // Lấy ra Apple
-        Console.WriteLine($"Peek: {queue.Peek()}"); // Xem phần tử đầu tiên (Banana)
-    }
-}
-```
-
-### Generic
-
-- `Generic` cho phép bạn định nghĩa các lớp, phương thức, và cấu trúc mà không cần chỉ định kiểu dữ liệu cụ thể. Điều này giúp tăng tính linh hoạt và tái sử dụng mã.
-
-```C#
-
-using System;
-
-class GenericClass<T>
-{
-    public T GenericMethod(T param)
-    {
-        return param;
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        GenericClass<int> intObj = new GenericClass<int>();
-        Console.WriteLine(intObj.GenericMethod(5)); // 5
-
-        GenericClass<string> stringObj = new GenericClass<string>();
-        Console.WriteLine(stringObj.GenericMethod("Hello")); // Hello
-    }
-}
-```
-
-### List
-
-- `List<T>` là một `collection` có khả năng thay đổi kích thước, tương tự như `ArrayList`, nhưng chỉ có thể chứa các đối tượng cùng kiểu `T`. Điều này giúp bảo vệ dữ liệu và cải thiện hiệu suất.
-
-```C#
-using System;
-using System.Collections.Generic;
-
-class Program
-{
-    static void Main()
-    {
-        List<string> list = new List<string> { "Apple", "Banana", "Cherry" };
-
-        Console.WriteLine("List elements:");
-        foreach (var item in list)
-        {
-            Console.WriteLine(item);
-        }
-
-        // Thêm phần tử
-        list.Add("Date");
-
-        // Xóa phần tử
-        list.Remove("Banana");
-
-        Console.WriteLine("After modification:");
-        foreach (var item in list)
-        {
-            Console.WriteLine(item);
-        }
-    }
-}
-```
-
-### Dictionary
-
-- `Dictionary<TKey, TValue>` là một `collection` lưu trữ các cặp `key-value`, cho phép truy cập nhanh chóng theo khóa. Các khóa là duy nhất và không thể trùng lặp.
-
-```C#
-using System;
-using System.Collections.Generic;
-
-class Program
-{
-    static void Main()
-    {
-        Dictionary<string, int> dictionary = new Dictionary<string, int>
-        {
-            { "Apple", 1 },
-            { "Banana", 2 },
-            { "Cherry", 3 }
-        };
-
-        Console.WriteLine("Dictionary elements:");
-        foreach (var kvp in dictionary)
-        {
-            Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
-        }
-
-        // Truy cập giá trị theo khóa
-        Console.WriteLine($"Value for key 'Banana': {dictionary["Banana"]}");
-    }
-}
-```
-
-### Delegate
-
-- `Delegate` là một kiểu dữ liệu cho phép bạn lưu trữ tham chiếu đến các phương thức. Bạn có thể sử dụng `delegate` để gọi phương thức một cách gián tiếp, làm cho việc xử lý sự kiện trở nên dễ dàng hơn.
-
-```C#
-using System;
-
-delegate void DisplayMessage(string message);
-
-class Program
-{
-    static void Main()
-    {
-        DisplayMessage msg = ShowMessage;
-        msg("Hello, World!");
-    }
-
-    static void ShowMessage(string message)
-    {
-        Console.WriteLine(message);
-    }
-}
-```
-
-### Event
-
-- `Sự kiện (Event)` trong C# được sử dụng để xử lý thông báo khi một hành động xảy ra. Sự kiện thường kết hợp với `delegate` để cho phép một lớp thông báo cho các lớp khác về các hành động cụ thể.
-
-```C#
-
-using System;
-
-class Publisher
-{
-    public event Action<string> Notify;
-
-    public void RaiseEvent(string message)
-    {
-        Notify?.Invoke(message);
-    }
-}
-
-class Subscriber
-{
-    public void Subscribe(Publisher publisher)
-    {
-        publisher.Notify += OnNotify;
-    }
-
-    private void OnNotify(string message)
-    {
-        Console.WriteLine($"Received message: {message}");
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        Publisher publisher = new Publisher();
-        Subscriber subscriber = new Subscriber();
-
-        subscriber.Subscribe(publisher);
-        publisher.RaiseEvent("Hello, Event!");
-    }
-}
-```
-
-### Lambda
-
-- `Lambda expressions` là một cách ngắn gọn để định nghĩa các phương thức ẩn danh. Chúng thường được sử dụng với `delegate` và các phương thức `LINQ`.
-
-```C#
-
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        Func<int, int> square = x => x * x;
-        Console.WriteLine($"Square of 5: {square(5)}");
-    }
-}
-
-```
-### Linq
-
-- `LINQ` (Language Integrated Query) cho phép bạn sử dụng cú pháp truy vấn trực tiếp trong C#. Nó hỗ trợ việc truy xuất dữ liệu từ các nguồn khác nhau như mảng, danh sách, cơ sở dữ liệu, v.v.
-
-```C#
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-class Program
-{
-    static void Main()
-    {
-        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
-
-        // Sử dụng LINQ để lọc các số chẵn
-        var evenNumbers = from n in numbers
-                          where n % 2 == 0
-                          select n;
-
-        Console.WriteLine("Even numbers:");
-        foreach (var number in evenNumbers)
-        {
-            Console.WriteLine(number);
-        }
-    }
-}
-```
