@@ -365,8 +365,21 @@ code {
           : 'default'
     });
   </script>
-<h2 id="b%C3%A0i-4">Bài 4</h2>
-<h3 id="m%E1%BA%A3ng-m%E1%BB%99t-chi%E1%BB%81u">Mảng một chiều</h3>
+<h1 id="b%C3%A0i-4">Bài 4</h1>
+<table>
+<thead>
+<tr>
+<th><a href="#m%E1%BA%A3ng-m%E1%BB%99t-chi%E1%BB%81u">P1</a></th>
+<th><a href="#m%E1%BA%A3ng-2-chi%E1%BB%81u">P2</a></th>
+<th><a href="#foreach">P3</a></th>
+<th><a href="#l%E1%BB%9Bp-string">P4</a></th>
+<th><a href="#l%E1%BB%9Bp-stringbuilder">P5</a></th>
+<th><a href="#ki%E1%BB%83u-li%E1%BB%87t-k%C3%AA-enum">P6</a></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<h2 id="m%E1%BA%A3ng-m%E1%BB%99t-chi%E1%BB%81u">Mảng một chiều</h2>
 <ul>
 <li><code>Mảng một chiều</code> là tập hợp các phần tử có cùng kiểu dữ liệu, được lưu trữ liên tiếp trong bộ nhớ và được truy cập bằng chỉ số (index).</li>
 </ul>
@@ -383,7 +396,7 @@ numbers[<span class="hljs-number">4</span>] = <span class="hljs-number">50</span
     Console.WriteLine(numbers[i]);
 }
 </div></code></pre>
-<h3 id="m%E1%BA%A3ng-2-chi%E1%BB%81u">Mảng 2 Chiều</h3>
+<h2 id="m%E1%BA%A3ng-2-chi%E1%BB%81u">Mảng 2 Chiều</h2>
 <ul>
 <li><code>Mảng hai chiều</code> trong C# là một bảng các giá trị được tổ chức dưới dạng hàng và cột. Nó thường được sử dụng để biểu diễn ma trận hoặc bảng.</li>
 </ul>
@@ -408,7 +421,7 @@ matrix[<span class="hljs-number">2</span>, <span class="hljs-number">2</span>] =
     Console.WriteLine();
 }
 </div></code></pre>
-<h3 id="foreach">Foreach</h3>
+<h2 id="foreach">Foreach</h2>
 <ul>
 <li>Câu lệnh foreach được sử dụng để duyệt qua tất cả các phần tử trong một mảng hoặc bất kỳ cấu trúc dữ liệu nào triển khai <code>IEnumerable</code> mà không cần sử dụng chỉ số.</li>
 </ul>
@@ -419,7 +432,7 @@ matrix[<span class="hljs-number">2</span>, <span class="hljs-number">2</span>] =
     Console.WriteLine(number);
 }
 </div></code></pre>
-<h3 id="l%E1%BB%9Bp-string">Lớp String</h3>
+<h2 id="l%E1%BB%9Bp-string">Lớp String</h2>
 <ul>
 <li>Lớp String trong C# đại diện cho một chuỗi ký tự bất biến, tức là không thể thay đổi nội dung của nó sau khi được khởi tạo</li>
 </ul>
@@ -439,7 +452,7 @@ Console.WriteLine(greeting.Contains(<span class="hljs-string">"Hel"</span>));  <
 <ul>
 <li><code>Lưu ý</code>: Do <code>String</code> là bất biến, khi bạn thao tác với chuỗi (như nối chuỗi, thay thế, cắt chuỗi), thực ra chuỗi mới sẽ được tạo ra, và chuỗi cũ không thay đổi. Điều này có thể gây ra hao phí bộ nhớ nếu thao tác với chuỗi lớn hoặc lặp lại nhiều lần.</li>
 </ul>
-<h3 id="l%E1%BB%9Bp-stringbuilder">Lớp StringBuilder</h3>
+<h2 id="l%E1%BB%9Bp-stringbuilder">Lớp StringBuilder</h2>
 <ul>
 <li>Lớp <code>StringBuilder</code> được sử dụng khi bạn cần thực hiện nhiều thao tác với chuỗi mà không muốn tạo nhiều đối tượng <code>String</code> mới. <code>StringBuilder</code> có thể thay đổi nội dung mà không tạo ra chuỗi mới.</li>
 </ul>
@@ -456,7 +469,7 @@ Console.WriteLine(sb.ToString());  <span class="hljs-comment">// Output: Hello J
 <ul>
 <li><code>Lợi ích</code>: <code>StringBuilder</code> hiệu quả hơn so với <code>String</code> khi cần nối, thay thế hoặc thao tác nhiều lần trên chuỗi, vì nó không tạo ra nhiều đối tượng mới trong bộ nhớ như <code>String</code> làm.</li>
 </ul>
-<h3 id="ki%E1%BB%83u-li%E1%BB%87t-k%C3%AA-enum">Kiểu liệt kê Enum</h3>
+<h2 id="ki%E1%BB%83u-li%E1%BB%87t-k%C3%AA-enum">Kiểu liệt kê Enum</h2>
 <ul>
 <li><code>Enum</code> là kiểu dữ liệu đặc biệt trong C# được sử dụng để định nghĩa một tập hợp các hằng số với tên dễ hiểu, giúp code dễ đọc và dễ bảo trì hơn.</li>
 </ul>

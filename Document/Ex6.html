@@ -365,8 +365,29 @@ code {
           : 'default'
     });
   </script>
-<h2 id="b%C3%A0i-6">Bài 6</h2>
-<h3 id="collection">Collection</h3>
+<h1 id="b%C3%A0i-6">Bài 6</h1>
+<table>
+<thead>
+<tr>
+<th><a href="#collection">P1</a></th>
+<th><a href="#arraylist">P2</a></th>
+<th><a href="#ph%C6%B0%C6%A1ng-th%E1%BB%A9c-sort">P3</a></th>
+<th><a href="#hashtable">P4</a></th>
+<th><a href="#sortedlist">P5</a></th>
+<th><a href="#stack">P6</a></th>
+<th><a href="#queue">P7</a></th>
+<th><a href="#generic">P8</a></th>
+<th><a href="#list">P9</a></th>
+<th><a href="#dictionary">P10</a></th>
+<th><a href="#delegate">P11</a></th>
+<th><a href="#event">P12</a></th>
+<th><a href="#lambda">P13</a></th>
+<th><a href="#linq">P14</a></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<h2 id="collection">Collection</h2>
 <ul>
 <li>
 <p><code>Collections</code> trong C# là một nhóm các lớp và giao diện được sử dụng để lưu trữ và quản lý một tập hợp các đối tượng. Các <code>collection</code> cung cấp nhiều phương thức để thêm, xóa, tìm kiếm và truy cập các phần tử trong tập hợp. Các <code>collection</code> thường được sử dụng thay cho mảng khi bạn cần khả năng linh hoạt hơn trong việc quản lý dữ liệu.</p>
@@ -382,7 +403,7 @@ code {
 </ul>
 </li>
 </ul>
-<h3 id="arraylist">ArrayList</h3>
+<h2 id="arraylist">ArrayList</h2>
 <ul>
 <li><code>ArrayList</code> là một collection có khả năng thay đổi kích thước, cho phép bạn thêm và xóa các phần tử mà không cần phải xác định kích thước trước. <code>ArrayList</code> có thể chứa các đối tượng của bất kỳ kiểu dữ liệu nào.</li>
 </ul>
@@ -420,7 +441,7 @@ arrayList.Add(<span class="hljs-number">3.14</span>);
     }
 }
 </div></code></pre>
-<h3 id="ph%C6%B0%C6%A1ng-th%E1%BB%A9c-sort">Phương thức Sort</h3>
+<h2 id="ph%C6%B0%C6%A1ng-th%E1%BB%A9c-sort">Phương thức Sort</h2>
 <ul>
 <li><code>Sort</code> là một phương thức có sẵn trong nhiều collection để sắp xếp các phần tử. Khi sử dụng <code>Sort</code> trên <code>ArrayList</code>, các phần tử sẽ được sắp xếp theo thứ tự tăng dần.</li>
 </ul>
@@ -451,7 +472,7 @@ arrayList.Add(<span class="hljs-number">3.14</span>);
     }
 }
 </div></code></pre>
-<h3 id="hashtable">HashTable</h3>
+<h2 id="hashtable">HashTable</h2>
 <ul>
 <li><code>HashTable</code> là một <code>collection</code> lưu trữ các cặp <code>key-value</code> (khóa-giá trị), cho phép truy cập nhanh chóng dựa trên khóa. Mỗi khóa trong <code>HashTable</code> là duy nhất và không thể trùng lặp.</li>
 </ul>
@@ -486,7 +507,7 @@ hashtable.Add(<span class="hljs-string">"key2"</span>, <span class="hljs-string"
 }
 
 </div></code></pre>
-<h3 id="sortedlist">SortedList</h3>
+<h2 id="sortedlist">SortedList</h2>
 <p>-<code> SortedList</code> là một <code>collection</code> kết hợp giữa <code>ArrayList</code> và <code>HashTable</code>. Nó lưu trữ các cặp <code>key-value</code>, nhưng các phần tử được sắp xếp theo thứ tự tăng dần của khóa. <code>SortedList</code> cho phép bạn truy cập các phần tử thông qua khóa và có hiệu suất tốt trong việc truy cập dữ liệu.</p>
 <pre class="hljs"><code><div>
 SortedList sortedList = <span class="hljs-keyword">new</span> SortedList();
@@ -518,7 +539,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
     }
 }
 </div></code></pre>
-<h3 id="stack">Stack</h3>
+<h2 id="stack">Stack</h2>
 <ul>
 <li><code>Stack</code> là một cấu trúc dữ liệu theo nguyên tắc LIFO (Last In, First Out), tức là phần tử được thêm vào sau cùng sẽ được lấy ra trước tiên. Bạn có thể sử dụng <code>Stack</code> để quản lý các đối tượng mà bạn muốn truy cập theo thứ tự ngược lại.</li>
 </ul>
@@ -549,7 +570,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
     }
 }
 </div></code></pre>
-<h3 id="queue">Queue</h3>
+<h2 id="queue">Queue</h2>
 <ul>
 <li><code>Queue</code> là một cấu trúc dữ liệu theo nguyên tắc FIFO (First In, First Out), tức là phần tử được thêm vào đầu tiên sẽ được lấy ra đầu tiên. <code>Queue</code> thường được sử dụng trong các ứng dụng như xử lý sự kiện hoặc các tác vụ cần quản lý theo thứ tự.</li>
 </ul>
@@ -580,7 +601,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
     }
 }
 </div></code></pre>
-<h3 id="generic">Generic</h3>
+<h2 id="generic">Generic</h2>
 <ul>
 <li><code>Generic</code> cho phép bạn định nghĩa các lớp, phương thức, và cấu trúc mà không cần chỉ định kiểu dữ liệu cụ thể. Điều này giúp tăng tính linh hoạt và tái sử dụng mã.</li>
 </ul>
@@ -607,7 +628,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
     }
 }
 </div></code></pre>
-<h3 id="list">List</h3>
+<h2 id="list">List</h2>
 <ul>
 <li><code>List&lt;T&gt;</code> là một <code>collection</code> có khả năng thay đổi kích thước, tương tự như <code>ArrayList</code>, nhưng chỉ có thể chứa các đối tượng cùng kiểu <code>T</code>. Điều này giúp bảo vệ dữ liệu và cải thiện hiệu suất.</li>
 </ul>
@@ -640,7 +661,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
     }
 }
 </div></code></pre>
-<h3 id="dictionary">Dictionary</h3>
+<h2 id="dictionary">Dictionary</h2>
 <ul>
 <li><code>Dictionary&lt;TKey, TValue&gt;</code> là một <code>collection</code> lưu trữ các cặp <code>key-value</code>, cho phép truy cập nhanh chóng theo khóa. Các khóa là duy nhất và không thể trùng lặp.</li>
 </ul>
@@ -669,7 +690,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
     }
 }
 </div></code></pre>
-<h3 id="delegate">Delegate</h3>
+<h2 id="delegate">Delegate</h2>
 <ul>
 <li><code>Delegate</code> là một kiểu dữ liệu cho phép bạn lưu trữ tham chiếu đến các phương thức. Bạn có thể sử dụng <code>delegate</code> để gọi phương thức một cách gián tiếp, làm cho việc xử lý sự kiện trở nên dễ dàng hơn.</li>
 </ul>
@@ -691,7 +712,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
     }
 }
 </div></code></pre>
-<h3 id="event">Event</h3>
+<h2 id="event">Event</h2>
 <ul>
 <li><code>Sự kiện (Event)</code> trong C# được sử dụng để xử lý thông báo khi một hành động xảy ra. Sự kiện thường kết hợp với <code>delegate</code> để cho phép một lớp thông báo cho các lớp khác về các hành động cụ thể.</li>
 </ul>
@@ -733,7 +754,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
     }
 }
 </div></code></pre>
-<h3 id="lambda">Lambda</h3>
+<h2 id="lambda">Lambda</h2>
 <ul>
 <li><code>Lambda expressions</code> là một cách ngắn gọn để định nghĩa các phương thức ẩn danh. Chúng thường được sử dụng với <code>delegate</code> và các phương thức <code>LINQ</code>.</li>
 </ul>
@@ -750,7 +771,7 @@ sortedList.Add(<span class="hljs-string">"C"</span>, <span class="hljs-number">3
 }
 
 </div></code></pre>
-<h3 id="linq">Linq</h3>
+<h2 id="linq">Linq</h2>
 <ul>
 <li><code>LINQ</code> (Language Integrated Query) cho phép bạn sử dụng cú pháp truy vấn trực tiếp trong C#. Nó hỗ trợ việc truy xuất dữ liệu từ các nguồn khác nhau như mảng, danh sách, cơ sở dữ liệu, v.v.</li>
 </ul>

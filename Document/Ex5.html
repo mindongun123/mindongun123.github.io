@@ -365,8 +365,23 @@ code {
           : 'default'
     });
   </script>
-<h2 id="b%C3%A0i-5">Bài 5</h2>
-<h3 id="oop">OOP</h3>
+<h1 id="b%C3%A0i-5">Bài 5</h1>
+<table>
+<thead>
+<tr>
+<th><a href="#oop">P1</a></th>
+<th><a href="#class">P2</a></th>
+<th><a href="#ph%C6%B0%C6%A1ng-th%E1%BB%A9c-kh%E1%BB%9Fi-t%E1%BA%A1o-constructor">P3</a></th>
+<th><a href="#ph%C6%B0%C6%A1ng-th%E1%BB%A9c-h%E1%BB%A7y-b%E1%BB%8F-destructor">P4</a></th>
+<th><a href="#k%E1%BA%BF-th%E1%BB%ABa-inheritance">P5</a></th>
+<th><a href="#%C4%91a-h%C3%ACnh">P6</a></th>
+<th><a href="#interface">P7</a></th>
+<th><a href="#n%E1%BA%A1p-ch%E1%BB%93ng-overload">P8</a></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<h2 id="oop">OOP</h2>
 <ul>
 <li>
 <p><code>OOP</code> (Object-Oriented Programming) là một phương pháp lập trình dựa trên việc sử dụng đối tượng và lớp. Nó giúp chia nhỏ các vấn đề phức tạp thành các phần nhỏ hơn, dễ quản lý và phát triển hơn. <code>OOP</code> có 4 đặc trưng chính:</p>
@@ -378,7 +393,7 @@ code {
 </ul>
 </li>
 </ul>
-<h3 id="class">Class</h3>
+<h2 id="class">Class</h2>
 <ul>
 <li>Lớp là một khuôn mẫu để tạo ra các đối tượng (<code>object</code>). Nó chứa các thuộc tính (dữ liệu) và phương thức (hành động) để mô tả hành vi và trạng thái của đối tượng</li>
 </ul>
@@ -407,7 +422,7 @@ Console.WriteLine(myCar.brand);  <span class="hljs-comment">// Output: Toyota</s
 myCar.Start();  <span class="hljs-comment">// Output: The car is starting.</span>
 
 </div></code></pre>
-<h3 id="ph%C6%B0%C6%A1ng-th%E1%BB%A9c-kh%E1%BB%9Fi-t%E1%BA%A1o-constructor">Phương thức khởi tạo (Constructor)</h3>
+<h2 id="ph%C6%B0%C6%A1ng-th%E1%BB%A9c-kh%E1%BB%9Fi-t%E1%BA%A1o-constructor">Phương thức khởi tạo (Constructor)</h2>
 <ul>
 <li>
 <p><code>Constructor</code> là một phương thức đặc biệt được gọi khi một đối tượng của lớp được tạo. Nó thường dùng để khởi tạo giá trị ban đầu cho các thuộc tính của đối tượng.</p>
@@ -451,7 +466,7 @@ myCar.Start();  <span class="hljs-comment">// Output: The car is starting.</span
 <ul>
 <li><code>Constructor</code> mặc định: Nếu bạn không định nghĩa <code>constructor</code>, C# sẽ cung cấp một <code>constructor</code> mặc định không tham số.</li>
 </ul>
-<h3 id="ph%C6%B0%C6%A1ng-th%E1%BB%A9c-h%E1%BB%A7y-b%E1%BB%8F-destructor">Phương thức hủy bỏ (Destructor)</h3>
+<h2 id="ph%C6%B0%C6%A1ng-th%E1%BB%A9c-h%E1%BB%A7y-b%E1%BB%8F-destructor">Phương thức hủy bỏ (Destructor)</h2>
 <ul>
 <li>
 <p><code>Destructor</code> là phương thức được gọi khi đối tượng bị hủy để giải phóng tài nguyên. Trong C#, <code>destructor</code> hiếm khi được sử dụng vì hệ thống quản lý bộ nhớ tự động (<code>garbage collector</code>) sẽ quản lý việc giải phóng tài nguyên. <code>Destructor</code> thường được dùng khi cần giải phóng tài nguyên không quản lý bởi bộ nhớ (ví dụ: tài nguyên hệ thống, file, kết nối cơ sở dữ liệu).</p>
@@ -494,7 +509,7 @@ myCar.Start();  <span class="hljs-comment">// Output: The car is starting.</span
 <ul>
 <li><code>Lưu ý</code>: <code>Destructor</code> được gọi tự động bởi <code>garbage collector</code> khi đối tượng không còn được sử dụng</li>
 </ul>
-<h3 id="k%E1%BA%BF-th%E1%BB%ABa-inheritance">Kế thừa (Inheritance)</h3>
+<h2 id="k%E1%BA%BF-th%E1%BB%ABa-inheritance">Kế thừa (Inheritance)</h2>
 <ul>
 <li><code>Kế thừa</code> là một trong những đặc trưng của <code>OOP</code> cho phép một lớp (gọi là lớp con) kế thừa các thuộc tính và phương thức từ một lớp khác (gọi là lớp cha). Điều này giúp tái sử dụng mã và tạo ra cấu trúc phân cấp.</li>
 </ul>
@@ -528,7 +543,7 @@ myCar.Start();  <span class="hljs-comment">// Output: The car is starting.</span
 <ul>
 <li><code>Lưu ý</code>: Trong C#, một lớp chỉ có thể kế thừa từ một lớp cha (kế thừa đơn). Tuy nhiên, một lớp có thể thực hiện nhiều giao diện.</li>
 </ul>
-<h3 id="%C4%91a-h%C3%ACnh">Đa Hình</h3>
+<h2 id="%C4%91a-h%C3%ACnh">Đa Hình</h2>
 <ul>
 <li>
 <p><code>Đa hình</code> cho phép các phương thức có cùng tên nhưng hành vi khác nhau tùy theo ngữ cảnh.</p>
@@ -604,7 +619,7 @@ myCar.Start();  <span class="hljs-comment">// Output: The car is starting.</span
     }
 }
 </div></code></pre>
-<h3 id="interface">Interface</h3>
+<h2 id="interface">Interface</h2>
 <ul>
 <li><code>Interface</code> định nghĩa một tập hợp các phương thức mà lớp thực thi phải triển khai. <code>Interface</code> không thể chứa các thuộc tính, phương thức, hoặc <code>constructor</code> mà không có thân phương thức (body).</li>
 </ul>
@@ -647,7 +662,7 @@ myCar.Start();  <span class="hljs-comment">// Output: The car is starting.</span
 <ul>
 <li><code>Lợi ích</code>: <code>Interfaces</code> giúp đạt được tính đa hình và tách biệt giữa các phương thức đã định nghĩa và cách chúng được triển khai, cho phép xây dựng các hệ thống linh hoạt hơn.</li>
 </ul>
-<h3 id="n%E1%BA%A1p-ch%E1%BB%93ng-overload">Nạp chồng (Overload)</h3>
+<h2 id="n%E1%BA%A1p-ch%E1%BB%93ng-overload">Nạp chồng (Overload)</h2>
 <ul>
 <li>
 <p><code>Nạp chồng</code> (<code>overloading</code>) cho phép bạn định nghĩa nhiều phương thức hoặc toán tử với cùng tên nhưng khác nhau về số lượng hoặc kiểu tham số. Điều này giúp cải thiện khả năng đọc và sử dụng mã.</p>

@@ -365,8 +365,25 @@ code {
           : 'default'
     });
   </script>
-<h2 id="b%C3%A0i-3">Bài 3</h2>
-<h3 id="t%E1%BB%AB-kh%C3%B3a-var">Từ Khóa Var</h3>
+<h1 id="b%C3%A0i-3">Bài 3</h1>
+<table>
+<thead>
+<tr>
+<th><a href="#t%E1%BB%AB-kh%C3%B3a-var">P1</a></th>
+<th><a href="#t%E1%BB%AB-kh%C3%B3a-dynamic">P2</a></th>
+<th><a href="#v%C3%B2ng-l%E1%BA%B7p">P3</a></th>
+<th><a href="#v%C3%B2ng-l%E1%BA%B7p-for">P4</a></th>
+<th><a href="#v%C3%B2ng-l%E1%BA%B7p-while">P5</a></th>
+<th><a href="#switch-case">P6</a></th>
+<th><a href="#v%C3%B2ng-l%E1%BA%B7p-do-while">P7</a></th>
+<th><a href="#t%C3%ACm-hi%E1%BB%83u-v%E1%BB%81-h%C3%A0m">P8</a></th>
+<th><a href="#bi%E1%BA%BFn-to%C3%A0n-c%E1%BB%A5c-bi%E1%BA%BFn-c%E1%BB%A5c-b%E1%BB%99">P9</a></th>
+<th><a href="#t%E1%BB%AB-kh%C3%B3a-ref-v%C3%A0-out">P10</a></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<h2 id="t%E1%BB%AB-kh%C3%B3a-var">Từ Khóa Var</h2>
 <ul>
 <li>Từ khóa var cho phép trình biên dịch suy ra kiểu của biến dựa trên giá trị được gán cho nó. Nó chỉ có thể được sử dụng khi giá trị gán cho biến đã xác định rõ kiểu</li>
 </ul>
@@ -376,7 +393,7 @@ code {
 <ul>
 <li><code>Lưu ý</code>: Khi sử dụng var, kiểu dữ liệu của biến được xác định tại thời điểm biên dịch và không thể thay đổi sau đó.</li>
 </ul>
-<h3 id="t%E1%BB%AB-kh%C3%B3a-dynamic">Từ khóa Dynamic</h3>
+<h2 id="t%E1%BB%AB-kh%C3%B3a-dynamic">Từ khóa Dynamic</h2>
 <ul>
 <li>Từ khóa dynamic cho phép một biến thay đổi kiểu dữ liệu trong quá trình thực thi (runtime). Không giống var, kiểu của dynamic không được xác định tại thời điểm biên dịch mà chỉ tại thời gian chạy.</li>
 </ul>
@@ -388,11 +405,11 @@ Console.WriteLine(data);  <span class="hljs-comment">// In ra Hello (kiểu stri
 <ul>
 <li><code>Lưu ý</code>: Sử dụng dynamic có thể dẫn đến lỗi chỉ được phát hiện tại thời gian chạy, vì vậy cần thận trọng khi dùng.</li>
 </ul>
-<h3 id="v%C3%B2ng-l%E1%BA%B7p">Vòng lặp</h3>
+<h2 id="v%C3%B2ng-l%E1%BA%B7p">Vòng lặp</h2>
 <ul>
 <li>Vòng lặp cho phép thực thi một đoạn mã nhiều lần dựa trên điều kiện nhất định.</li>
 </ul>
-<h3 id="v%C3%B2ng-l%E1%BA%B7p-for">Vòng lặp for</h3>
+<h2 id="v%C3%B2ng-l%E1%BA%B7p-for">Vòng lặp for</h2>
 <ul>
 <li>Vòng lặp for thường được sử dụng khi bạn biết trước số lần lặp. Cấu trúc của vòng lặp for bao gồm 3 phần: khởi tạo biến, điều kiện lặp, và thay đổi biến sau mỗi lần lặp.</li>
 </ul>
@@ -401,7 +418,7 @@ Console.WriteLine(data);  <span class="hljs-comment">// In ra Hello (kiểu stri
     Console.WriteLine(i);  <span class="hljs-comment">// In ra 0, 1, 2, 3, 4</span>
 }
 </div></code></pre>
-<h3 id="v%C3%B2ng-l%E1%BA%B7p-while">Vòng lặp while</h3>
+<h2 id="v%C3%B2ng-l%E1%BA%B7p-while">Vòng lặp while</h2>
 <ul>
 <li>Vòng lặp while thực hiện một đoạn mã khi điều kiện kiểm tra là true. Nếu điều kiện không thỏa mãn ngay từ đầu, vòng lặp sẽ không thực hiện lần nào.</li>
 </ul>
@@ -412,7 +429,7 @@ Console.WriteLine(data);  <span class="hljs-comment">// In ra Hello (kiểu stri
     i++;
 }
 </div></code></pre>
-<h3 id="v%C3%B2ng-l%E1%BA%B7p-do-while">Vòng lặp do-while</h3>
+<h2 id="v%C3%B2ng-l%E1%BA%B7p-do-while">Vòng lặp do-while</h2>
 <ul>
 <li>Vòng lặp do-while luôn thực hiện ít nhất một lần, sau đó mới kiểm tra điều kiện. Nếu điều kiện đúng, vòng lặp tiếp tục; nếu sai, vòng lặp kết thúc.</li>
 </ul>
@@ -423,7 +440,7 @@ Console.WriteLine(data);  <span class="hljs-comment">// In ra Hello (kiểu stri
     i++;
 } <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>);
 </div></code></pre>
-<h3 id="t%C3%ACm-hi%E1%BB%83u-v%E1%BB%81-h%C3%A0m">Tìm hiểu về Hàm</h3>
+<h2 id="t%C3%ACm-hi%E1%BB%83u-v%E1%BB%81-h%C3%A0m">Tìm hiểu về Hàm</h2>
 <ul>
 <li>Hàm (hay phương thức) là một khối mã thực hiện một chức năng cụ thể. Hàm có thể nhận các tham số và trả về giá trị (hoặc không).</li>
 </ul>
@@ -435,7 +452,7 @@ Console.WriteLine(data);  <span class="hljs-comment">// In ra Hello (kiểu stri
 <span class="hljs-comment">// Gọi hàm</span>
 <span class="hljs-keyword">int</span> result = AddNumbers(<span class="hljs-number">5</span>, <span class="hljs-number">10</span>);  <span class="hljs-comment">// result = 15</span>
 </div></code></pre>
-<h3 id="bi%E1%BA%BFn-to%C3%A0n-c%E1%BB%A5c-bi%E1%BA%BFn-c%E1%BB%A5c-b%E1%BB%99">Biến toàn cục, biến cục bộ</h3>
+<h2 id="bi%E1%BA%BFn-to%C3%A0n-c%E1%BB%A5c-bi%E1%BA%BFn-c%E1%BB%A5c-b%E1%BB%99">Biến toàn cục, biến cục bộ</h2>
 <ul>
 <li><code>Biến cục bộ</code>: Chỉ có thể truy cập trong một phạm vi nhất định như trong một hàm, vòng lặp hoặc khối mã.</li>
 <li><code>Biến toàn cục</code>: Là biến khai báo trong phạm vi lớp, có thể được truy cập từ bất kỳ phương thức nào trong lớp.</li>
@@ -453,7 +470,7 @@ Console.WriteLine(data);  <span class="hljs-comment">// In ra Hello (kiểu stri
     }
 }
 </div></code></pre>
-<h3 id="t%E1%BB%AB-kh%C3%B3a-ref-v%C3%A0-out">Từ khóa ref và out</h3>
+<h2 id="t%E1%BB%AB-kh%C3%B3a-ref-v%C3%A0-out">Từ khóa ref và out</h2>
 <ul>
 <li><code>ref</code>: Dùng để truyền tham chiếu đến biến, cho phép hàm thay đổi giá trị của biến đó.</li>
 <li><code>out</code>: Cũng truyền tham chiếu, nhưng biến được yêu cầu phải được gán giá trị bên trong hàm trước khi trả về.</li>
